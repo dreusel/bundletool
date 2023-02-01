@@ -1,14 +1,16 @@
 {
-  "name": "bundletool",
-  "version": "1.1.7",
+  "name": "@dreusel/bundletool",
+  "version": "1.2.0-test1",
   "description": "An unoficial wrapper around google's bundletool",
   "repository": "github:Ribeiro-Tiago/bundletool",
   "main": "lib/index.js",
   "scripts": {
+    "run": "src/run-bundletool.sh",
     "build": "rm -rf lib .bundletool && tsc",
     "install": "node install.js",
     "test": "exit 1"
   },
+  "bin": "src/run-bundletool.sh",
   "keywords": [
     "bundletool",
     "android",
